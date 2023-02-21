@@ -227,6 +227,13 @@ h1 {
 .row-contact {
     padding: 150px;
 }
+.col-img {
+    height: 200px;
+}
+
+.row-footer {
+    padding-left: 350px !important;
+}
 
 @media screen and (max-width: 992px) {
     .navbar {
@@ -302,5 +309,16 @@ h1 {
     }
     .row-contact {
         padding: 20px;
+    }
+    .row-contact {
+        padding: 20px;
+    }
+    .col-img {
+        margin-top: 30px;
+        height: 100px;
+    }
+    
+    .row-footer {
+        padding-left: 20px !important;
     }
 }
