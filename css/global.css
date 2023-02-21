@@ -19,11 +19,37 @@
     color: white !important;
 }
 
+.navbar-toggler {
+    color: white;
+}
+.navbar-toggler-icon {
+    color: white !important;
+}
+.navbar-toggler:focus {
+    outline: none;
+}
+
 .main {
     background-color: #C00000;
     padding: 20px;
     height: 600px;
-    clip-path: polygon(25% 0%, 100% 0, 74% 100%, 0 100%);
+    clip-path: polygon(100% 0%, 100% 85%, 0% 100%, 0 100px);
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+
+.grid-style {
+    position: relative;
+    /* top: 30%; */
+    left: 70%;
+    height: 500px;
+}
+.grid-style-2 {
+    position: absolute;
+    top: 95%;
+    right: 80%;
+    height: 200px;
 }
 
 .border {
@@ -56,8 +82,8 @@
 
 @media screen and (max-width: 992px) {
     .navbar {
-        padding-left: 10px !important;
-        padding-right: 10px !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
     }
 
     .main {
@@ -72,13 +98,19 @@
     .carousel .carousel-inner .carousel-item .carousel-caption h5 {
         font-size: 50px;
         position: relative;
-        bottom: 0px;
+        bottom: 300px;
     }
     .main {
         background-color: #C00000;
         padding: 20px;
         height: 600px;
-        clip-path: none;
+        clip-path: polygon(100% 0%, 100% 74.25%, 70% 100%, 0% 100%, 0% 0%);
+    }
+    .grid-style {
+        height: auto;
+    }
+    .grid-style-2 {
+        height: auto;
     }
     
 }
