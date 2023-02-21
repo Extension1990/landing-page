@@ -1,3 +1,20 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  body {
+    overflow: auto;
+    color: rgb(0, 0, 0);
+    padding-bottom: 30px !important;
+    margin-bottom: 0 !important;
+  }
 * {
     margin: 0;
     padding: 0;
@@ -41,15 +58,15 @@
 
 .grid-style {
     position: relative;
-    /* top: 30%; */
-    left: 70%;
+    left: 80%;
     height: 500px;
 }
 .grid-style-2 {
-    position: absolute;
-    top: 95%;
-    right: 80%;
+    position: relative;
+    top: 95px;
+    right: 60%;
     height: 200px;
+    z-index: 1000;
 }
 
 .border {
@@ -57,19 +74,21 @@
     margin: 20px;
     padding-top: 10%;
     border-style: dashed !important;
+    clip-path: polygon(100% 0%, 100% 85%, 0% 100%, 0 100px);
 }
 
-/* Carousel */
 .carousel .carousel-inner .carousel-item {
     height: auto;
 }
 .carousel .carousel-inner .carousel-item img {
+    opacity: .9;
     height: 1000px;
 }
 .carousel .carousel-inner .carousel-item .carousel-caption h5 {
-    font-size: 50px;
+    font-size: 70px;
     position: relative;
     bottom: 420px;
+    font-weight: bolder;
 }
 .caption {
     color: white;
@@ -78,7 +97,96 @@
     color: white;
 }
 
- 
+.btn-black {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.btn-black:hover {
+    background-color: white;
+    color: black;
+    padding-right: 30px;
+    transition: all .5s ;
+}
+.btn-red {
+    background-color: #C00000;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+.btn-red:hover {
+    background-color: whitesmoke;
+    color: #C00000;
+    padding-right: 30px;
+    transition: all .5s ;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.what-we-do {
+    width: 60%;
+    margin: auto;
+}
+
+.card {
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: none;
+}
+
+.card-believe {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.vat-2 {
+    position: relative;
+    left: 80% !important;
+    top: 120px !important;
+    z-index: 1000;
+    height: 200px;
+}
+
+.what-we-believe {
+    background-color: #AAABAB;
+    padding: 20px;
+    height: 600px;
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    clip-path: polygon(100% 13.5%, 100% 100%, 0% 87.5%, 0% 0%);
+}
+
+.grid {
+    height: 200px;
+    margin-top: 150px;
+}
+
+.team-section {
+    position: relative;
+    background-color: #AAABAB;
+    height: 300px;
+    padding: 50px;
+    color: white;
+}
+
+.team-row {
+    width: 60%;
+}
+
+.team-img {
+    border-radius: 10px;
+}
+
+.testimonial-1 {
+    background-color: #C00000;
+    border-radius: 10px;
+    padding: 30px 50px;
+}
 
 @media screen and (max-width: 992px) {
     .navbar {
@@ -108,9 +216,45 @@
     }
     .grid-style {
         height: auto;
+        position: relative;
+        left: 80%;
+        top: -130px;
+    }
+    .border {
+        clip-path: none;
+        border-style: none !important;
     }
     .grid-style-2 {
-        height: auto;
+        position: relative;
+        top: -125px;
+        right: 30%;
+        height: 100px;
+        z-index: 1000;
     }
-    
+    .btn-black {
+        background-color: black;
+        color: white;
+        border-radius: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .what-we-do {
+        width: 90%;
+        margin: auto;
+        text-align: left !important;
+    }
+    .what-we-believe {
+        height: 1000px;
+    }
+    .vat-2 {
+        position: relative;
+        left: 70% !important;
+        top: 90px !important;
+        z-index: 1000;
+        height: 100px;
+    }
+    .grid {
+        height: 200px;
+        margin-top: 0px;
+    }
 }
