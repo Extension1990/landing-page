@@ -12,7 +12,6 @@ html {
   body {
     overflow: auto;
     color: rgb(0, 0, 0);
-    padding-bottom: 30px !important;
     margin-bottom: 0 !important;
   }
 * {
@@ -51,7 +50,7 @@ html {
     padding: 20px;
     height: 600px;
     clip-path: polygon(100% 0%, 100% 85%, 0% 100%, 0 100px);
-    position: absolute;
+    position: absolute !important;
     width: 100%;
     bottom: 0px;
 }
@@ -122,6 +121,19 @@ html {
     padding-right: 30px;
     transition: all .5s ;
 }
+.btn-red-alt {
+    background-color: #C00000;
+    border: 1px solid #ffffff;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+.btn-red-alt:hover {
+    background-color: whitesmoke;
+    color: #C00000;
+    padding-right: 30px;
+    transition: all .5s ;
+}
 
 h1 {
     font-weight: bold;
@@ -169,12 +181,13 @@ h1 {
 .team-section {
     position: relative;
     background-color: #AAABAB;
-    height: 300px;
+    height: auto;
     padding: 50px;
     color: white;
 }
 
 .team-row {
+    position: relative;
     width: 60%;
 }
 
@@ -185,7 +198,34 @@ h1 {
 .testimonial-1 {
     background-color: #C00000;
     border-radius: 10px;
-    padding: 30px 50px;
+    padding: 90px 30px;
+}
+
+.testimonial-2 {
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 90px 30px;
+}
+
+.testimonial-3 {
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 90px 30px;
+}
+
+.join {
+    height: 600px;
+    background: url('../assets/images/ff.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact {
+    background-color: #C00000;
+    color: white;
+}
+.row-contact {
+    padding: 150px;
 }
 
 @media screen and (max-width: 992px) {
@@ -256,5 +296,11 @@ h1 {
     .grid {
         height: 200px;
         margin-top: 0px;
+    }
+    .team-row {
+        width: 100%;
+    }
+    .row-contact {
+        padding: 20px;
     }
 }
