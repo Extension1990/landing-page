@@ -156,11 +156,14 @@ h1 {
 
 /* What we do section */
 .what-we-do-sec {
-    margin-top: -250px;
+    margin-top: -400px;
 }
 .what-we-do {
     width: 60%;
     margin: auto;
+}
+.africa-map {
+    height: 200px !important;
 }
 
 .card {
@@ -181,6 +184,15 @@ h1 {
     z-index: 1000;
     height: 200px;
 }
+.vat-3 {
+    position: relative;
+    left: 10% !important;
+    top: 200px !important;
+    height: 200px;
+}
+.fighter-par {
+    font-size: 100px;
+}
 
 .what-we-believe {
     background-color: #AAABAB;
@@ -192,6 +204,7 @@ h1 {
     clip-path: polygon(100% 13.5%, 100% 100%, 0% 87.5%, 0% 0%);
 }
 
+/* Join Tax */
 .grid {
     height: 200px;
     margin-top: 150px;
@@ -199,10 +212,10 @@ h1 {
 
 .team-section {
     position: relative;
-    background-color: #AAABAB;
+    background-color: #f7f7f7;
     height: auto;
     padding: 50px;
-    color: white;
+    color: rgb(160, 6, 6);
 }
 
 .team-row {
@@ -323,6 +336,7 @@ h1 {
     }
     .africa-map {
         margin-left: 40%;
+        height: 80px !important;
     }
 
     /* What we do section */
@@ -354,6 +368,12 @@ h1 {
         top: 90px !important;
         z-index: 1000;
         height: 100px;
+    }
+    .vat-3 {
+        display: none;
+    }
+    .fighter-par {
+        font-size: 100px;
     }
     .grid {
         height: 200px;
