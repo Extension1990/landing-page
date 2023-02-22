@@ -50,7 +50,7 @@ html {
     padding: 20px;
     height: 600px;
     clip-path: polygon(100% 0%, 100% 85%, 0% 100%, 0 100px);
-    position: absolute !important;
+    position: relative !important;
     width: 100%;
     bottom: 0px;
 }
@@ -59,10 +59,11 @@ html {
     position: relative;
     left: 80%;
     height: 500px;
+    top: -300px;
 }
 .grid-style-2 {
     position: relative;
-    top: 95px;
+    top: -300px;
     right: 60%;
     height: 200px;
     z-index: 1000;
@@ -229,13 +230,13 @@ h1 {
 }
 .col-img {
     height: 100px;
-    margin-left: 550px !important;
+    margin-left: 500px !important;
 }
 .footer {
     background-color: #000000;
 }
 .row-footer {
-    max-width: 50%;
+    max-width: 70%;
 }
 
 .text-par {
@@ -251,8 +252,7 @@ h1 {
     .main {
         background-color: #C00000;
         height: 400px;
-        position: relative;
-        top: -50px;
+        /* margin-top: 850px !important; */
     }
     .carousel .carousel-inner .carousel-item img {
         height: 400px;
