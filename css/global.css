@@ -14,6 +14,7 @@ html {
     color: rgb(0, 0, 0);
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
+    height: auto;
   }
 * {
     margin: 0;
@@ -36,14 +37,15 @@ html {
     color: white !important;
 }
 
-.navbar-toggler {
-    color: white;
-}
-.navbar-toggler-icon {
-    color: white !important;
-}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(255, 255, 255);
+  } 
 .navbar-toggler:focus {
-    outline: none;
+    outline: none !important;
 }
 
 /* Carousel */
@@ -65,7 +67,8 @@ html {
     bottom: 400px;
 }
 .carousel .carousel-inner .carousel-item .carousel-caption h5 {
-    font-size: 150px;
+    font-size: 70px;
+    font-weight: 600;
     margin-top: 60px;
 }
 .caption {
@@ -229,7 +232,10 @@ h1 {
     padding: 50px;
     color: rgb(0, 0, 0);
 }
-
+/* Main */
+.team-caption {
+    padding: 20px;
+}
 .team-row {
     position: relative;
     width: 60%;
@@ -281,6 +287,7 @@ h1 {
 }
 .row-footer {
     max-width: 70%;
+    padding: 20px;
 }
 
 .text-par {
@@ -288,6 +295,14 @@ h1 {
 }
 
 @media screen and (max-width: 992px) {
+    /* Navbar */
+    .navbar-collapse {
+        background-color: #474747;
+        border-top: 2px solid #C00000;
+        border-bottom: 2px solid #C00000;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
     .navbar {
         padding-left: 15px !important;
         padding-right: 15px !important;
@@ -378,7 +393,7 @@ h1 {
     .vat-2 {
         position: relative;
         left: 70% !important;
-        top: 90px !important;
+        top: 160px !important;
         z-index: 1000;
         height: 100px;
     }
@@ -400,8 +415,12 @@ h1 {
     .team-row {
         width: 100%;
     }
+    .team-section {
+        padding: 10px;
+        padding-top: 30px;
+    }
     .row-contact {
-        padding: 20px;
+        padding: 30px;
     }
     .row-contact {
         padding: 20px;
@@ -416,5 +435,12 @@ h1 {
     .col-img {
         height: 100px;
         margin-left: 0px !important;
+    }
+    .join {
+        height: 200px;
+        background: url('../assets/images/fighter-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: fill;
     }
 }
