@@ -45,6 +45,38 @@ html {
     outline: none;
 }
 
+/* Carousel */
+.carousel {
+    height: 1000px;
+    width: 100%;
+}
+.carousel .carousel-inner .carousel-item {
+    height: auto;
+}
+.carousel .carousel-inner .carousel-item .carousel-img {
+    opacity: .9;
+    height: 1000px;
+}
+.carousel .carousel-inner .carousel-item .kenya-img {
+    height: 200px;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption {
+    bottom: 400px;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption h5 {
+    font-size: 50px;
+    margin-top: 60px;
+}
+.caption {
+    color: white;
+}
+.par {
+    width: 60%;
+    margin: auto;
+    color: white;
+}
+
+/* Main */
 .main {
     background-color: #C00000;
     padding: 20px;
@@ -52,51 +84,33 @@ html {
     clip-path: polygon(100% 0%, 100% 85%, 0% 100%, 0 100px);
     position: relative !important;
     width: 100%;
-    bottom: 0px;
+    bottom: 100px;
 }
 
-.grid-style {
-    position: relative;
-    left: 80%;
-    height: 500px;
-    top: -300px;
-}
-.grid-style-2 {
-    position: relative;
-    top: -300px;
-    right: 60%;
-    height: 200px;
-    z-index: 1000;
-}
-
+/* Border inside main */
 .border {
     height: 500px;
     margin: 20px;
+    margin-top: 0;
     padding-top: 10%;
     border-style: dashed !important;
     clip-path: polygon(100% 0%, 100% 85%, 0% 100%, 0 100px);
+    /* clip-path: polygon(100% 0%, 100% 85%, 0% 100%, 0 100px); */
 }
-
-.carousel .carousel-inner .carousel-item {
-    height: auto;
-}
-.carousel .carousel-inner .carousel-item img {
-    opacity: .9;
-    height: 1000px;
-}
-.carousel .carousel-inner .carousel-item .carousel-caption h5 {
-    font-size: 70px;
+.main-img-1 {
     position: relative;
-    bottom: 420px;
-    font-weight: bolder;
+    left: 10%;
+    bottom: 250px;
+    height: 200px;
 }
-.caption {
-    color: white;
-}
-.par {
-    color: white;
+.main-img-2 {
+    position: relative;
+    left: 60%;
+    bottom: 350px;
+    height: 400px;
 }
 
+/* Buttons */
 .btn-black {
     background-color: black;
     color: white;
@@ -140,6 +154,10 @@ h1 {
     font-weight: bold;
 }
 
+/* What we do section */
+.what-we-do-sec {
+    margin-top: -250px;
+}
 .what-we-do {
     width: 60%;
     margin: auto;
@@ -248,54 +266,81 @@ h1 {
         padding-left: 15px !important;
         padding-right: 15px !important;
     }
-
-    .main {
-        background-color: #C00000;
-        height: 400px;
-        /* margin-top: 850px !important; */
+    
+    /* Carousel */
+    .carousel {
+        height: 300px;
+        width: 100%;
     }
-    .carousel .carousel-inner .carousel-item img {
-        height: 400px;
+    .carousel .carousel-inner .carousel-item .carousel-img {
+        opacity: .9;
+        height: 300px;
     }
     .carousel .carousel-inner .carousel-item .carousel-caption h5 {
-        font-size: 50px;
-        position: relative;
-        bottom: 300px;
+        font-size: 20px;
+        margin-top: 60px;
     }
+    .carousel .carousel-inner .carousel-item .kenya-img {
+        height: auto;
+    }
+    .carousel .carousel-inner .carousel-item .carousel-caption {
+        bottom: 30px;
+    }
+
+    /* Main */
     .main {
         background-color: #C00000;
-        padding: 20px;
-        height: 600px;
-        clip-path: polygon(100% 0%, 100% 74.25%, 70% 100%, 0% 100%, 0% 0%);
-    }
-    .grid-style {
-        height: auto;
-        position: relative;
-        left: 80%;
-        top: -130px;
-    }
-    .border {
+        height: 400px;
         clip-path: none;
-        border-style: none !important;
+        padding-top: 30px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0 !important;
+        margin: 0 !important;
+        position: inherit;
+        bottom: 0px;
     }
-    .grid-style-2 {
-        position: relative;
-        top: -125px;
-        right: 30%;
-        height: 100px;
-        z-index: 1000;
+    /* Border inside main */
+    .border {
+        height: auto;
+        margin: 0px;
+        margin-top: 0 !important;
+        border-style: none !important;
+        border-left: none !important;
+        border-right: none !important;
+        clip-path: none;
+    }
+
+    .par {
+        width: 100%;
+        margin: auto;
+        color: white;
+    }
+
+    /* Main images */
+    .main-img-1, .main-img-2 {
+        display: none;
+    }
+    .africa-map {
+        margin-left: 40%;
+    }
+
+    /* What we do section */
+    .what-we-do-sec {
+        margin-top: 0px;
     }
     .btn-black {
         background-color: black;
         color: white;
         border-radius: 30px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .btn-red {
         width: 100%;
     }
     .what-we-do {
+        padding-top: 20px;
         width: 90%;
         margin: auto;
         text-align: left !important;
