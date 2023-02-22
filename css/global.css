@@ -215,7 +215,7 @@ h1 {
     background-color: #f7f7f7;
     height: auto;
     padding: 50px;
-    color: rgb(160, 6, 6);
+    color: rgb(0, 0, 0);
 }
 
 .team-row {
@@ -373,7 +373,7 @@ h1 {
         display: none;
     }
     .fighter-par {
-        font-size: 100px;
+        font-size: 50px;
     }
     .grid {
         height: 200px;
