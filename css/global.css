@@ -13,6 +13,7 @@ html {
     overflow: auto;
     color: rgb(0, 0, 0);
     margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
   }
 * {
     margin: 0;
@@ -64,7 +65,7 @@ html {
     bottom: 400px;
 }
 .carousel .carousel-inner .carousel-item .carousel-caption h5 {
-    font-size: 50px;
+    font-size: 150px;
     margin-top: 60px;
 }
 .caption {
@@ -192,6 +193,7 @@ h1 {
 }
 .fighter-par {
     font-size: 100px;
+    color: #C00000 !important;
 }
 
 .what-we-believe {
@@ -210,11 +212,11 @@ h1 {
     margin-top: 150px;
 }
 
-.card {
+.team-card {
     height: 450px;
     border-radius: 10px;
 }
-.card img {
+.over-lay-img {
     height: 450px;
     border-radius: 10px;
     object-fit: cover;
@@ -257,9 +259,10 @@ h1 {
 
 .join {
     height: 600px;
-    background: url('../assets/images/ff.jpg');
+    background: url('../assets/images/fighter-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: fill;
 }
 
 .contact {
@@ -384,6 +387,7 @@ h1 {
     }
     .fighter-par {
         font-size: 50px;
+        color: #C00000 !important;
     }
     .grid {
         height: 200px;
