@@ -158,6 +158,14 @@ html {
     color: white;
     border: 1px solid white;
 }
+.btn-up:hover {
+    background-color: #ffffff !important;
+    color: #C00000;
+    border: 1px solid #C00000;
+}
+.link {
+    color: #C00000;
+}
 
 h1 {
     font-weight: bold;
@@ -296,24 +304,26 @@ h1 {
 .row-footer {
     max-width: 70%;
     padding: 40px;
+    padding-bottom: 0 !important;
 }
 
 .text-par {
     width: 50%;
 }
 
+/* For mobile */
 @media screen and (max-width: 992px) {
     /* Navbar */
+    .navbar {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
     .navbar-collapse {
         background-color: #474747;
         border-top: 2px solid #C00000;
         border-bottom: 2px solid #C00000;
         margin-top: 10px;
         margin-bottom: 10px;
-    }
-    .navbar {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
     }
     
     /* Carousel */
@@ -450,5 +460,14 @@ h1 {
         background-repeat: no-repeat;
         background-size: cover;
         object-fit: fill;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 1380px) {
+    /* Navbar */
+    .navbar {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
     }
 }
