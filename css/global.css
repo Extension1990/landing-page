@@ -219,6 +219,9 @@ h1 {
     height: 450px;
     border-radius: 10px;
 }
+.text-card {
+    background-color: transparent !important;
+}
 .over-lay-img {
     height: 450px;
     border-radius: 10px;
