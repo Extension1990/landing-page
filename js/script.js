@@ -1,13 +1,11 @@
 // Setting active link using Javascript
-function active() {
-  const navLinkEls = document.querySelectorAll('.nav-link');
-  const sectionId = document.location.hash;
-  
-  console.log(sectionId);
-  navLinkEls.forEach(navLinkEl => {
-    if(navLinkEl.href.includes(sectionId)) {
-      navLinkEl.classList.add('active');
-    }
-  });
+let lists = document.querySelectorAll('.nav-link');
+function activeLink(li) {
+    lists.forEach((item) => item.classList.remove('active'));
+    li.classList.add('active');
 }
+lists.forEach((item) =>
+  item.addEventListener('click', function(){
+    activeLink(this);
+}));
 
